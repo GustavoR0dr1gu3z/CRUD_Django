@@ -7,3 +7,6 @@ class Contact(models.Model): # Creo clase e importo los modelos
     phone = models.CharField(max_length=15)
     email = models.EmailField(blank=True) # Email que acepta nulos
     
+    def __str__(self): # Definir metodo con la construccion de la clase Contact
+        return f"{self.first_name} {self.last_name}" # Construye una secuencia de caracteres
+        
