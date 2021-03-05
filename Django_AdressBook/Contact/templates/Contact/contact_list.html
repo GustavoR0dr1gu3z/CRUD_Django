@@ -7,6 +7,10 @@
     <title>Agenda Kodemia</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    {% for Contact in object_list  %}  
+        <p> {{ Contact }}
+        </p>
+    {% endfor %}
+
 </body>
 </html>
