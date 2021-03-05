@@ -12,8 +12,8 @@
         {{ object }}
         
         <form method="POST">
-            
-            <input type="submit" value="Confirmar" </input>
+            {% csrf_token %}
+            <input type="submit" value="Confirmar"> </input>
             
         </form>
 
