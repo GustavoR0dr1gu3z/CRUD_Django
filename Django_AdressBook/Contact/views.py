@@ -16,6 +16,7 @@ from .forms import ContactForm
 #--------CREANDO LAS VISTAS DE LAS CLASES PARA LA AGENDA--------
 class ContactCreateView(CreateView):
     model = Contact
+    form_class = ContactForm
 
 class ContactListView(ListView):
     model = Contact
@@ -29,5 +30,6 @@ class ContactUpdateView(UpdateView):
 
 class ContactDeleteView(DeleteView):
     model = Contact
+    success_url = reverse_lazy("contactList")
     # success_url = reverse_lazy()
 
