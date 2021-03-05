@@ -7,8 +7,8 @@ from django.views.generic import (
     DetailView,
     DeleteView,
 )
-from models import Contact
-from forms import ContactForm
+from .models import Contact
+from .forms import ContactForm
 
 # Create your views here.
 
